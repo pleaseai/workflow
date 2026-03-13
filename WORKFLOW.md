@@ -104,7 +104,7 @@ Do NOT start implementation until this evaluation is complete.
 
 ### Step 1: Classify the work type
 
-Fetch the full issue details:
+Fetch the full issue details using the issue URL from the `<issue-data>` block above (run from within the project workspace directory):
 
     gh issue view <NUMBER> --json title,body,labels,comments --repo <OWNER/REPO>
 
