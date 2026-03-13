@@ -1,0 +1,5 @@
+# please plugin runtime state
+.please/state/
+
+# IDE
+.idea/
