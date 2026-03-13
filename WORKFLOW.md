@@ -22,12 +22,12 @@ workspace:
 hooks:
   before_run: |
     set -e
-    # Infisical에서 최신 시크릿 주입
+    # Inject latest secrets from Infisical
     eval "$(infisical export --format=dotenv-export)"
     git fetch origin
     git rebase origin/main || git rebase --abort
-    # 플러그인 마켓플레이스 등록 및 설치
-    claude plugin marketplace add --scope local chatbot-pf/engineering-standards
+    # Register and install from plugin marketplace
+    claude plugin marketplace add --scope local pleaseai/engineering-standards
     claude plugin marketplace add --scope local pleaseai/claude-code-plugins
     claude plugin install please@passionfactory --scope local
     claude plugin install standards@passionfactory --scope local
