@@ -17,6 +17,22 @@
     "gardening@passionfactory": true,
     "please@passionfactory": true,
     "review@passionfactory": true,
-    "worktree@passionfactory": true
+    "worktree@passionfactory": true,
+    "fetch@pleaseai": true,
+    "gatekeeper@pleaseai": true
+  },
+  "extraKnownMarketplaces": {
+    "passionfactory": {
+      "source": {
+        "source": "github",
+        "repo": "chatbot-pf/engineering-standards"
+      }
+    },
+    "pleaseai": {
+      "source": {
+        "source": "github",
+        "repo": "pleaseai/claude-code-plugins"
+      }
+    }
   }
 }
