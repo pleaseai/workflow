@@ -141,4 +141,7 @@ Determine the work type using these signals (in priority order):
 ### Rules
 
 - Operate autonomously -- never ask a human for follow-up. Complete the task end-to-end.
+- Run tests and lint before committing -- ensure all checks pass.
+- Commit using conventional format -- e.g. `feat(scope): add new capability`.
+- After PR is created, move the issue status to `In Review` (handled by `please:pr-finalization`).
 - Blocked? -- if blocked by missing auth, permissions, or secrets, document the blocker and stop.
